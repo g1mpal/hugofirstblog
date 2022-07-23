@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Gimpal Blog'
+title = 'Gimpal First Blog'
 paginate = 3
 
 [params]
