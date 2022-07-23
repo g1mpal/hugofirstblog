@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Health on Gimpal Blog</title>
+    <title>Health on Gimpal First Blog</title>
     <link>http://example.org/tags/health/</link>
-    <description>Recent content in Health on Gimpal Blog</description>
+    <description>Recent content in Health on Gimpal First Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Jul 2022 11:17:24 +0300</lastBuildDate><atom:link href="http://example.org/tags/health/index.xml" rel="self" type="application/rss+xml" />
