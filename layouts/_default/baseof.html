@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/cs/main.css">
+</head>
+<body>
+    <header id="site-header">    
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <div class="container-fluid">
+                        <a class="navbar-brand justify-content-md-evenly" href="/">{{ .Site.Title }}</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link" href="/posts/">Posts</a>
+                            <a class="nav-link" href="/about/">About Us</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>                
+              </nav>
+       
+    </header>
+    <main id="site-main">
+        <div class="container">
+            {{block "main" .}}
+            {{end}}
+        </div>
+
+    </main>
+    <footer id="site-footer" class="bg-dark text-white pb-4 pt-4">
+        <div class="copyright text-center">
+            &copy; 2022 {{.Site.Title}}
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
